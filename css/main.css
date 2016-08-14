@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,800,700italic);
 /********************
 ****Style Index******
 *********************/
@@ -26,8 +27,11 @@ h2, h1, h3, h2 a, h1 a, h3 a, a h2, a h1, a h3 {
 body {
 	overflow-x: hidden;
 	background: #fff;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	line-height: 28px;
+}
+h1, h2, h3, h4, a h1, a h2, a h3, a h4, h1 a, h2 a, h3 a, h4 a {
+	font-family: 'Raleway', sans-serif;
 }
 #main {
 	background: #fff;
