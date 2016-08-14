@@ -253,10 +253,6 @@ slider
 .carousel-caption .caption-text .caption-text-2{
 	animation: slideInLeft 1200ms;
 }
-.carousel-caption .caption-text .btn-slider {
-	margin-top: 15px;
-	animation: flipInX 1500ms;
-}
 .caption-image {
 	animation: slideInRight 1200ms;
 }
