@@ -38,7 +38,8 @@ h1, h2, h3, h4, a h1, a h2, a h3, a h4, h1 a, h2 a, h3 a, h4 a {
 }
 a {
 	color: #2FC0A4;
-	transition: all 300ms;
+	-webkit-transition: all 300ms;
+	        transition: all 300ms;
 	text-decoration: none;
 }
 a:hover {
@@ -60,7 +61,6 @@ a:hover {
 .form-control:focus {
     border-color: #008C71;
     outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(47,192,163,.075),0 0 8px rgba(47,192,163,.6);
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(47,192,163,.6);
 }
 .btn-action {
@@ -135,12 +135,14 @@ header {
 	color: #000;
 	padding: 10px 5px;
 	margin: 0;
-	transition: 300ms;
+	-webkit-transition: 300ms;
+	        transition: 300ms;
 }
 
 .header-top .social li a:hover .fa {
 	color: #fff;
-	transition: all 300ms;
+	-webkit-transition: all 300ms;
+	        transition: all 300ms;
 }
 
 /*------------------------
@@ -164,11 +166,13 @@ header {
 	top: 0;
 	z-index: 99999;
 	width: 100%;
-	animation: fadeInDown 300ms;
+	-webkit-animation: fadeInDown 300ms;
+	        animation: fadeInDown 300ms;
 }
 .affix .navbar-brand{
 	display: block;
-	animation: flash 1200ms;
+	-webkit-animation: flash 1200ms;
+	        animation: flash 1200ms;
 	color: #2FC0A4;
 	font-size: 22px;
 }
@@ -195,7 +199,7 @@ header {
     border: 1px solid #2FC0A4;
     border-radius: 0;
 }
-.navbar-toggle::after {
+.navbar-toggle:after {
     content: "Menu";
     position: absolute;
     left: 6px;
@@ -239,30 +243,38 @@ slider
 	position: absolute;
 }
 .carousel .carousel-inner .item {
-  	transition-property: opacity;
+  	-webkit-transition-property: opacity;
+  	        transition-property: opacity;
 }
 .carousel .carousel-inner .item, .carousel .carousel-inner .active.left, .carousel .carousel-inner .active.right {
 	  opacity: 0;
+	  filter: alpha(opacity=0);
 }
 .carousel .carousel-inner .active, .carousel .carousel-inner .next.left, .carousel .carousel-inner .prev.right {
 	  opacity: 1;
+	  filter: alpha(opacity=100);
 }
 .carousel .carousel-inner .next, .carousel .carousel-inner .prev, .carousel .carousel-inner .active.left, .carousel .carousel-inner .active.right {
 	  left: 0;
-	  transform: translate3d(0, 0, 0);
+	  -webkit-transform: translate3d(0, 0, 0);
+	          transform: translate3d(0, 0, 0);
 }
 .carousel-caption .caption-text .caption-title {
 	font-family: 'Raleway', sans-serif;
-	animation: slideInLeft 900ms;
+	-webkit-animation: slideInLeft 900ms;
+	        animation: slideInLeft 900ms;
 }
 .carousel-caption .caption-text .caption-text-1{
-	animation: slideInLeft 1100ms;
+	-webkit-animation: slideInLeft 1100ms;
+	        animation: slideInLeft 1100ms;
 }
 .carousel-caption .caption-text .caption-text-2{
-	animation: slideInLeft 1200ms;
+	-webkit-animation: slideInLeft 1200ms;
+	        animation: slideInLeft 1200ms;
 }
 .caption-image {
-	animation: slideInRight 1200ms;
+	-webkit-animation: slideInRight 1200ms;
+	        animation: slideInRight 1200ms;
 }
 .caption-text {
 	width: 50%;
@@ -407,7 +419,8 @@ page content
 	color: #008C71;
 }
 #feature .media:hover .media-left {
-	animation: fadeIn 1800ms;
+	-webkit-animation: fadeIn 1800ms;
+	        animation: fadeIn 1800ms;
 }
 /* feature content end */
 
@@ -433,11 +446,13 @@ page content
 	bottom: 0;
 }
 .team-player:hover .team-content-top {
-	animation: fadeInDown 300ms;
+	-webkit-animation: fadeInDown 300ms;
+	        animation: fadeInDown 300ms;
 	display: block;
 }
 .team-player:hover .team-content-bottom {
-	animation: fadeInUp 300ms;
+	-webkit-animation: fadeInUp 300ms;
+	        animation: fadeInUp 300ms;
 	display: block;
 }
 .team-content .social {
@@ -540,7 +555,8 @@ responsive css
 	}
 	.navbar-nav .dropdown:hover .dropdown-menu {
 		display: block;
-		animation: flipInX 300ms;
+		-webkit-animation: flipInX 300ms;
+		        animation: flipInX 300ms;
 	}
 	.navbar-collapse {
 		padding: 0;
@@ -563,12 +579,14 @@ responsive css
 	}
 	#carousel-id:hover .glyphicon-triangle-left{
 		display: block;
-		animation: fadeInLeft 300ms;
+		-webkit-animation: fadeInLeft 300ms;
+		        animation: fadeInLeft 300ms;
 		right: 30%;	
 	}
 	#carousel-id:hover .glyphicon-triangle-right {
 		display: block;
-		animation: fadeInRight 300ms;
+		-webkit-animation: fadeInRight 300ms;
+		        animation: fadeInRight 300ms;
 		left: 30%;
 	}
 	.carousel-caption .caption-text .caption-title {
@@ -582,6 +600,9 @@ responsive css
 	}
 	.call-to-action-text-wrapper {
 		padding: 0;
+	}
+	.call-to-action-text-wrapper h2, .call-to-action-text-wrapper p {
+		font-size: 28px;
 	}
 }
 @media (max-width: 420px){
@@ -666,8 +687,8 @@ utility
   background: rgba(47, 192, 164, 1);
   visibility: hidden;
   opacity: 0;
+  filter: alpha(opacity=0);
   -webkit-transition: opacity .3s 0s, visibility 0s .3s;
-  -moz-transition: opacity .3s 0s, visibility 0s .3s;
   transition: opacity .3s 0s, visibility 0s .3s;
   color: #fff;
   text-align: center;
@@ -675,21 +696,23 @@ utility
 }
 .cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
   -webkit-transition: opacity .3s 0s, visibility 0s 0s;
-  -moz-transition: opacity .3s 0s, visibility 0s 0s;
   transition: opacity .3s 0s, visibility 0s 0s;
 }
 .cd-top.cd-is-visible {
   /* the button becomes visible */
   visibility: visible;
   opacity: 1;
+  filter: alpha(opacity=100);
 }
 .cd-top.cd-fade-out {
   /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
   opacity: .5;
+  filter: alpha(opacity=50);
 }
 .no-touch .cd-top:hover, .cd-top:hover {
   background-color: #2FC0A4;
   opacity: 1;
+  filter: alpha(opacity=100);
 }
 
 @media only screen and (min-width: 768px) {
