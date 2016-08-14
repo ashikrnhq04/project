@@ -13,7 +13,12 @@
 8. footer -
 *********************/
 
-/*reset style*/
+/*--------------------
+
+reset style
+
+----------------------*/
+
 h2, h1, h3, h2 a, h1 a, h3 a, a h2, a h1, a h3 {
 	font-family: 'Roboto Condensed', sans-serif;
 	font-weight: 700;
@@ -83,7 +88,11 @@ section {
 article {
 	padding: 20px 0px;
 }
-/* header */
+/*------------------------
+ 
+ header
+
+ ------------------------- */
 header {
 	background: #fff;
 }
@@ -129,7 +138,12 @@ header {
 	color: #fff;
 	transition: all 300ms;
 }
-/* navbar */
+
+/*------------------------
+
+ navbar 
+
+ -------------------------- */
 .navbar  {
 	border-radius: 0;
 	margin-bottom: 0;
@@ -194,7 +208,11 @@ header {
     text-decoration: none;
     background-color: #2FC0A4;
 }
-/*slider*/
+/* ------------------------------
+
+slider
+
+---------------------------------*/
 .carousel-inner>.item>a>img, .carousel-inner>.item>img {
 	width: 100%!important;
 }
@@ -243,7 +261,13 @@ header {
 	width: 50%;
 	float: right;
 }
-/* homepage */
+
+
+/* --------------------
+
+homepage 
+
+----------------------- */
 
 /* homepage service */
 #service .nav-tabs>li {
@@ -336,7 +360,13 @@ header {
 }
 /* homepage content */
 
-/* page content */
+
+
+/* -------------------
+
+page content 
+
+-----------------------*/
 #page-header {
 	position: relative;
 	height: 300px;
@@ -426,10 +456,14 @@ header {
 }
 /* team end */
 
-/* page content end */
 
 
-/* footer */
+/*------------------------
+
+ footer 
+
+---------------------------*/
+
 footer {
 	background: #008C71;
 	padding: 40px 0px 20px 0px;
@@ -476,6 +510,13 @@ footer ul li a:hover {
 	background: #2FC0A4;
 	color: #fff;
 }
+
+/*-----------------------
+
+responsive css
+
+--------------------------*/
+
 @media (min-width: 800px){
 	.navbar-ex1-collapse{
 		text-align: center;
@@ -577,6 +618,11 @@ footer ul li a:hover {
 
 
 
+/*--------------------
+
+utility
+
+-----------------------*/
 
 /*map*/
   #map {
@@ -595,6 +641,7 @@ footer ul li a:hover {
         color: #4272db;
     }
 
+/* back to top */
 .cd-top {
   display: inline-block;
   padding: 10px 20px;
@@ -646,3 +693,6 @@ footer ul li a:hover {
     bottom: 30px;
   }
 }
+
+
+/* end back to top */
