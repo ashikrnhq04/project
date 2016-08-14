@@ -1,19 +1,12 @@
-
 $(document).ready(function() {
-//wow js init   
+//wow js init	
 new WOW().init();;
 
 //bootstrap tab init for feature section
 $('#service a').click(function (e) {
   e.preventDefault()
   $(this).tab('show')
-
-  //active menu
-
-  
-
-
-
+});
 
 //back to top
 // browser window scroll (in pixels) after which the "back to top" link is shown
@@ -41,7 +34,6 @@ $('#service a').click(function (e) {
             }, scroll_top_duration
         );
     });
-});
 
 /* google map */
 google.maps.event.addDomListener(window, 'load', init);
@@ -108,4 +100,8 @@ $(function(){
     });
 })
 
+
+
 })
+
+ 
