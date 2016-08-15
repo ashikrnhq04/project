@@ -331,9 +331,11 @@ homepage
 	padding: 0;
 }
 #service .tab-content {
-	padding: 20px 10px;
 	background: #F8F8F8;
 	overflow: hidden;
+}
+#service .content-image-wrapper {
+	padding: 30px 20px;
 }
 .nav-tabs {
 	border: none;
