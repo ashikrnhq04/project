@@ -85,6 +85,15 @@ a:hover {
 	border: 1px solid #008C71
 
 }
+
+::-moz-selection{
+	background: #0EB292;
+	color: #fff;
+} 
+::selection{
+	background: #0EB292;
+	color: #fff;
+}
 section {
 	margin: 30px 0px 60px 0px;
 	overflow: hidden;
