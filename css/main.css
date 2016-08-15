@@ -165,7 +165,7 @@ header {
 	border: none;
 }
 .navbar-nav li:first-child {
-	margin-right: 1px solid transparent;
+	margin-right: 1px;
 }
 .navbar-brand {
 	display: none;
